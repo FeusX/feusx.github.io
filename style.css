@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.background{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 0;
+    background-color: #1768d1;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 10px;
+}
+
+.linuxbtn{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 0;
+    background-color: #999c05;
+    font-weight: bold;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+}
