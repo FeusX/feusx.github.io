@@ -10,12 +10,12 @@
 
   const cmds = {
     help: () => [
-      'Available commands:',
-      '  help:      show this message',
-      '  ls:        lists projects',
-      '  whoami:    a short introduction',
-      '  clear:     clear the outputs',
-      '  contact:   info for communication'
+      "Available commands: ",
+      "  help:      show this message",
+      "  ls:        lists projects",
+      "  whoami:    a short introduction",
+      "  clear:     clear the outputs",
+      "  contact:   info for communication"
     ],
     ls: () => [
       "Projects: ",
@@ -37,7 +37,7 @@
       "E-mail: feusuaigax@proton.me",
       "Github: https://www.github.com/FeusX"
     ],
-    clear: () => { out.innerHTML = ''; return []; }
+    clear: () => { out.innerHTML = ""; return []; }
   };
 
   function printLines(lines, className='') {
