@@ -27,7 +27,8 @@
       "And so on... If you want to see more, type 'contact' for my Github page."
     ],
     whoami: () => [
-      "About: Someone who is interested in programming, maths and electronics.",
+      "About: ",
+      "Someone who is interested in programming, maths and electronics.",
       "Studying Back-end software development at the university, probably I will study computer, electrical or mechatronics engineering in the future.",
       "I develop my software on Helix Editor and I use Arch Linux with Zsh"
     ],
