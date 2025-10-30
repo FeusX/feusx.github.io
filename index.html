@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Terminal Site</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="terminal" id="term" tabindex="0">
+    <div class="line muted">Welcome, type "help" for commands.</div>
+    <div id="output"></div>
+
+    <div class="line">
+      <span class="prompt">> <input id="cmdInput" class="input" autocomplete="off" autocorrect="off"
+          autocapitalize="off" spellcheck="false" /></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
