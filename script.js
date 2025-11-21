@@ -29,7 +29,7 @@
     whoami: () => [
       "About: ",
       "Someone who is interested in programming, maths and electronics.",
-      "Studying Back-end software development at the university, probably I will study computer, electrical or mechatronics engineering in the future.",
+      "Studying a program related to software development and engineering at the university, probably I will study computer, electrical or mechatronics engineering in the future.",
       "I develop my software on Helix Editor and I use Arch Linux with Zsh"
     ],
     contact: () => [
