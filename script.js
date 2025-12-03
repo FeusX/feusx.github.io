@@ -9,36 +9,44 @@
   const history = []; let hIndex = 0;
 
   const cmds = {
-    help: () => [
-      "Available commands: ",
-      "  help:      show this message",
-      "  ls:        lists projects",
-      "  whoami:    a short introduction",
-      "  clear:     clear the outputs",
-      "  contact:   info for communication"
-    ],
-    ls: () => [
-      "Projects: ",
-      "Fork bomb with C++ for windows operating systems.",
-      "Binary counter with esp8266.",
-      "Music player based on pygame and tkinter.",
-      "This website that you are looking at.",
-      "Sorting algorithm visualizer with C++ and SDL2.",
-      "And so on... If you want to see more, type 'contact' for my Github page."
-    ],
-    whoami: () => [
-      "About: ",
-      "Someone who is interested in programming, maths and electronics.",
-      "Studying a program related to software development and engineering at the university, probably I will study computer, electrical or mechatronics engineering in the future.",
-      "I develop my software on Helix Editor and I use Arch Linux with Zsh"
-    ],
-    contact: () => [
-      "Contact:",
-      "E-mail: feusuaigax@proton.me",
-      "Github: https://www.github.com/FeusX"
-    ],
-    clear: () => { out.innerHTML = ""; return []; }
-  };
+  help: () => [
+    "Available commands: ",
+    "  help:      show this message",
+    "  ls:        lists projects",
+    "  whoami:    a short introduction",
+    "  clear:     clear the outputs",
+    "  contact:   info for communication",
+    "  github:    opens GitHub in a new tab"
+  ],
+  ls: () => [
+    "Projects: ",
+    "Fork bomb with C++ for windows operating systems.",
+    "Binary counter with esp8266.",
+    "Music player based on pygame and tkinter.",
+    "This website that you are looking at.",
+    "Sorting algorithm visualizer with C++ and SDL2.",
+    "An interpeter and operating system for Arduino Nano microprocessor.",
+    "And so on... If you want to see more, type 'contact' for my Github page."
+  ],
+  whoami: () => [
+    "About: ",
+    "Someone who is interested in programming, maths and electronics.",
+    "Studying a program related to software engineering at the university.",
+    "I develop my software on Helix Editor and I use Arch Linux with Zsh."
+  ],
+  contact: () => [
+    "Contact:",
+    "E-mail: feusuaigax@proton.me",
+  ],
+  clear: () => { 
+    out.innerHTML = ""; 
+    return []; 
+  },
+  github: () => {
+    window.open("https://github.com/FeusX", "_blank");
+    return ["Opening GitHub..."];
+  }
+};
 
   function printLines(lines, className='') {
     if (!lines || lines.length === 0) return;
