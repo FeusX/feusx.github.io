@@ -44,7 +44,7 @@
   },
   github: () => {
     window.open("https://github.com/FeusX", "_blank");
-    return ["Opening GitHub..."];
+    return ["Launching GitHub..."];
   }
 };
 
