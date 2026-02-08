@@ -16,7 +16,7 @@
     "  whoami:    a short introduction",
     "  clear:     clear the outputs",
     "  contact:   info for communication",
-    "  github:    opens GitHub in a new tab"
+    "  github:    opens GitHub in a new tab",
     "  retro8:    explore the retro8 project"
   ],
   ls: () => [
