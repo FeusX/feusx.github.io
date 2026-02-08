@@ -50,7 +50,7 @@
   retro8: () => [
     "A handheld game console powered by ESP32 and SSD1306 from scratch.",
     "Retro8 is a self-contained embedded system I designed to push through to limits of the ESP32 and SSD1306.",
-    "It contains custom SSD1306 drives and rendering engine. Also has a tiny custom OS inside it."
+    "It contains custom SSD1306 drivers and rendering engine. Also has a tiny custom OS inside it."
   ]
 };
 
