@@ -23,17 +23,17 @@
     "Projects: ",
     "Fork bomb with C++ for windows operating systems.",
     "Binary counter with esp8266.",
-    "Music player based on pygame and tkinter.",
     "This website that you are looking at.",
     "Sorting algorithm visualizer with C++ and SDL2.",
     "An interpeter and operating system for Arduino Nano microprocessor.",
-    "And so on... If you want to see more, type 'contact' for my Github page."
+    "A handheld gaming console (type retro8 to see)",
+    "And so on... If you want to see more, type 'github' for my Github page."
   ],
   whoami: () => [
     "About: ",
-    "Someone who is interested in programming, maths and electronics.",
-    "Studying a program related to software engineering at the university.",
-    "I develop my software on Helix Editor and I use Arch Linux with Zsh."
+    "Someone who is interested in programming, computer graphics and electronics.",
+    "Studying a program related to software and electronics.",
+    "I write my programs on Helix Editor and I use Arch Linux with Zsh."
   ],
   contact: () => [
     "Contact:",
@@ -48,9 +48,10 @@
     return ["Launching GitHub..."];
   },
   retro8: () => [
-    "A handheld game console powered by ESP32 and SSD1306 from scratch.",
-    "Retro8 is a self-contained embedded system I designed to push through to limits of the ESP32 and SSD1306.",
-    "It contains custom SSD1306 drivers and rendering engine. Also has a tiny custom OS inside it."
+  "A handheld game console powered by ESP32 and SSD1306 from scratch.",
+  "Retro8 is a self-contained embedded system I designed to push through the limits of the ESP32 and SSD1306.",
+  "It contains custom SSD1306 drivers and rendering engine. Also has a tiny custom OS inside it.",
+  { type: 'link', text: 'Visit Retro8 project', url: 'https://github.com/FeusX/retro8' }
   ]
 };
 
