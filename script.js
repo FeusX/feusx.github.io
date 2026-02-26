@@ -5,7 +5,7 @@
 
   term.addEventListener('click', () => input.focus());
   input.focus();
-
+//
   const history = []; let hIndex = 0;
 
   const cmds = {
