@@ -51,20 +51,33 @@
   "A handheld game console powered by ESP32 and SSD1306 from scratch.",
   "Retro8 is a self-contained embedded system I designed to push through the limits of the ESP32 and SSD1306.",
   "It contains custom SSD1306 drivers and rendering engine. Also has a tiny custom OS inside it.",
-  { type: 'link', text: 'Visit Retro8 project', url: 'https://github.com/FeusX/retro8' }
+  { type: 'link', text: 'Visit Retro8 project', url: 'https://github.com/FeusX/retro8-console' }
   ]
 };
 
-  function printLines(lines, className='') {
-    if (!lines || lines.length === 0) return;
-    lines.forEach(l => {
-      const div = document.createElement('div');
-      div.className = 'line ' + className;
+  function printLines(lines, className = '') {
+  if (!lines || lines.length === 0) return;
+  
+  lines.forEach(l => {
+    const div = document.createElement('div');
+    div.className = 'line ' + className;
+
+    if (typeof l === 'object' && l.type === 'link') {
+      const anchor = document.createElement('a');
+      anchor.href = l.url;
+      anchor.textContent = l.text;
+      anchor.target = '_blank';
+      anchor.style.color = 'cyan';
+      div.appendChild(anchor);
+    } else {
       div.textContent = l;
-      out.appendChild(div);
-    });
-    term.scrollTop = term.scrollHeight;
-  }
+    }
+
+    out.appendChild(div);
+  });
+  
+  term.scrollTop = term.scrollHeight;
+}
 
   function handleCommand(raw) {
     const cmd = raw.trim();
